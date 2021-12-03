@@ -30,4 +30,4 @@ def on_left_vs(time:int,start_per=0.1, start_speed=0.5):
                 print("加速耗时 比率：%.2f，速度：%.1f，运载量：%.1f，倍率：%.2f" % (per, speed, load2, (load2-load1)/load1))
                 break
 
-on_left_vs(60, 0.4,1.5)
+on_left_vs(60, 0.1,1.5)

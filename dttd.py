@@ -33,7 +33,7 @@ def on_left_vs(people:int):
     print("+++++++++++%d+++++++++++" % people)
     t1 = on_lift1(people)
     print("并行耗时 比率：%.2f，速度：%.1f，耗时：%.1f" % (1, 1, t1))
-    for per in [int((x/10+0.3)*10)/10 for x in range(5)]:
+    for per in [int((x/10+0.3)*10)/10 for x in range(7)]:
         for speed in [x/10+2.5 for x in range(5,40,5)]:
             t2 = on_lift2(people, per, speed)
             if t2 < t1:
